@@ -1,0 +1,156 @@
+
+ @font-face {
+    font-family: flowbold;
+    src: url(fonts/GE Flow Bold.ttf);
+ }
+ @font-face {
+    font-family: ARIALMTMEDIUM;
+    src: url(fonts/ ARIALMTMEDIUM.woff);
+ }
+
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    
+}
+.banner-img{
+    width: 80%;
+}
+
+.first-bg-clr{
+    background-color: #1b1a1b;
+}
+.img-width{
+    width: 100%;
+
+    height: 15vh;
+}
+.div1 {
+    flex-direction: row;
+    display: grid;
+    flex-wrap: nowrap;
+    grid-auto-flow: column;
+}
+.bg-clr{
+
+    margin-top: -10px;
+
+    background: radial-gradient(closest-side,  #232323, #3f3d3f);
+}
+
+.text-cl{
+    color: #0097d2;
+    
+
+}
+.top-img{
+    width: 12%;
+}
+
+.arabic-font{
+    font-family: flowbold;
+}
+.arabic-font1{
+   font-family: ARIALMTMEDIUM;
+}
+.shadow{
+  
+    text-align:center;
+    position: relative;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+  
+  .shadow:after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-image:
+      linear-gradient(to right, #232323, rgba(0,128,128,0) 200px),
+      linear-gradient(to left , #232323, rgba(0,128,128,0) 200px);
+  }
+
+  .text-paragraph{
+    padding: 0px 50px;
+}
+
+.bg-img{
+background-image: url('../img/main-img1.jpg');
+background-size: cover;
+height: 750px;
+background-repeat: no-repeat;
+position: relative;
+background-position: center;
+
+}
+.pa{
+position: absolute;
+bottom: 30px;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+  @media screen and (max-width: 768px) {
+    .div1 {
+        flex-direction: row;
+        display: inline-block;
+        flex-wrap: nowrap;
+        grid-auto-flow: column;
+    }
+    .img-width{
+        width: unset;
+    
+        height: 15vh;
+    }
+    .shadow{
+  
+        text-align:center;
+        position: relative;
+      
+      }
+      
+      .shadow:after {
+        content: '';
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-image:
+          linear-gradient(to right, #232323, rgba(0,128,128,0) 100px),
+          linear-gradient(to left , #232323, rgba(0,128,128,0) 100px);
+      }
+
+      .text-paragraph{
+        padding: 0px 0px;
+    } 
+    
+    .bg-img {
+        background-image: url(../img/main-img.jpg);
+
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+        background-size: 100%;
+        height: 448px;
+        background-color: #1a1313;
+    }
+        .pa{
+        position: relative;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        
+        }  
+    
+  }
+
+
+
+
+
